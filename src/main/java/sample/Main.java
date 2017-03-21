@@ -83,6 +83,7 @@ public class Main extends Application {
         MenuItem exit = new MenuItem("Exit");
         exitMenu.getItems().add(exit);
         exit.setOnAction(event -> {
+            fileMenu.setVisible(false);
             primaryStage.close();
             regStage.show();
         });
